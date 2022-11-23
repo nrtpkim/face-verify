@@ -1,0 +1,16 @@
+version: '3.8'
+networks:
+  fr_api:
+    driver: bridge
+    
+services:
+  result_broker:
+    image: redis:7.0.4-alpine
+    container_name: result_broker.$DOMAIN
+    command: [ "redis-server", "--bind", "0.0.0.0", "--port", "6379" ]
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 6379:6379
+    networks:
+      - fr_api

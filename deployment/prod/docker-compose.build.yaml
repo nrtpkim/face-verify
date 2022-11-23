@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  face_compare_matching_service:
+    extends:
+      file: face-compare-matching-service/docker-compose.build.yaml
+      service: face_compare_matching_service
+
+  # ai_service:
+  #   extends:
+  #     file: ai_service/docker-compose.build.yaml
+  #     service: ai_service_$PROCESSING_UNIT
+

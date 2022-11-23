@@ -1,0 +1,42 @@
+version: '3.8'
+
+networks:
+  fr_api:
+    driver: bridge
+
+# volumes:
+  # dia_fr_prod_persistence_elastic:
+  # dia_fr_prod_persistence_minio:
+  # dia_fr_prod_persistence_mysql:
+  # dia_fr_prod_persistence_redis:
+
+services:
+  ### Persistence layer
+  # Broker - Redis
+  result_broker:
+    extends:
+      file: broker/docker-compose.yaml
+      service: result_broker
+    restart: always
+
+
+  ### API layer
+  # Proxy
+  # proxy_server:
+  #   extends:
+  #     file: proxy/docker-compose.yaml
+  #     service: nginx
+    # restart: always
+
+
+  ### Service Layer
+  # Face compare matching service
+  face_compare_matching_service:
+    extends:
+      file: face-compare-matching-service/docker-compose.yaml
+      service: face_compare_matching_service
+    restart: always
+
+  
+
+

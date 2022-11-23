@@ -1,0 +1,17 @@
+version: '3.8'
+networks:
+  fr_api:
+    driver: bridge
+
+services:
+  face_compare_matching_service:
+    image: $IMAGE_NAME/face_compare_matching_service:$VERSION
+    container_name: face_compare_matching_service.$DOMAIN
+
+    ports: 
+      - 7001:7001
+
+    command: bash -c "python main.py"
+   
+    networks:
+      - fr_api
