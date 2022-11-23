@@ -22,13 +22,13 @@ VERSION = v0.0.1
 
 ```
 cd face-verify
-sudo docker compose -f deployment/prod/docker-compose.build.yaml build
+docker compose -f deployment/prod/docker-compose.build.yaml build
 ```
 
 start service run this script
 ```
 cd face-verify
-sudo docker compose -f deployment/prod/docker-compose.yaml up -d
+docker compose -f deployment/prod/docker-compose.yaml up -d
 ```
 
 ### Branch Strategy

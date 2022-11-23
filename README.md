@@ -21,19 +21,19 @@ Can run on python 3.7.13
 
 Install requirements
 ```
-cd face-compare-matching-service
+cd ai-service
 pip install -r requirements.txt
 ```
 
 Run API service
 ```
-cd face-compare-matching-service
+cd ai-service
 python main.py
 ```
 
 Noted: 
 Must download models and paste models to path below.
 ```
-face-verify\face-compare-matching-service\src\provider\models\<face_detect>
-face-verify\face-compare-matching-service\src\provider\models\<face_embedding>
+face-verify\ai-service\src\provider\models\<face_detect>
+face-verify\ai-service\src\provider\models\<face_embedding>
 ```

@@ -18,7 +18,7 @@
 
 ### Download and Compile Model 
 
-1. cd ./face-compare-matching-service/src/provider
+1. cd ./ai-service/src/provider
 
 2. Paste model to this folder
 
