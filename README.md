@@ -2,7 +2,7 @@
 
 Face verify is face recognition model that verify 1:1 face
 
-![FACE VERIFY](assets\facial-comparisonimage.jpg)
+![FACE VERIFY](assets/facial-comparisonimage.jpg)
 
 ### Run Docker
 ```

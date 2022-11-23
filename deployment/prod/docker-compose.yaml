@@ -31,10 +31,10 @@ services:
 
   ### Service Layer
   # Face compare matching service
-  face_compare_matching_service:
+  ai_service:
     extends:
-      file: face-compare-matching-service/docker-compose.yaml
-      service: face_compare_matching_service
+      file: ai-service/docker-compose.yaml
+      service: ai_service
     restart: always
 
   

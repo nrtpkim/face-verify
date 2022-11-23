@@ -1,8 +1,0 @@
-version: "3.8"
-
-services:
-  face_compare_matching_service:
-    build:
-      context: ../../../
-      dockerfile: ./deployment/prod/face-compare-matching-service/build-image/Dockerfile
-    image: $IMAGE_NAME/face_compare_matching_service:$VERSION

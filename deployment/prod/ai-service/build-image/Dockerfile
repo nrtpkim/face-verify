@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --upgrade pip --no-cache-dir
 
-COPY face-compare-matching-service/ .
+COPY ai-service/ .
 
 RUN pip install -r requirements.txt
 

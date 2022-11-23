@@ -4,9 +4,9 @@ networks:
     driver: bridge
 
 services:
-  face_compare_matching_service:
-    image: $IMAGE_NAME/face_compare_matching_service:$VERSION
-    container_name: face_compare_matching_service.$DOMAIN
+  ai_service:
+    image: $IMAGE_NAME/ai_service:$VERSION
+    container_name: ai_service.$DOMAIN
 
     ports: 
       - 7001:7001
